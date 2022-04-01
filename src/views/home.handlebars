@@ -1,0 +1,12 @@
+<h1>Olá Handlebars</h1>
+<p>Nome: {{ name }}</p>
+<p>Sobrenome: {{ surname }}</p>
+<p>Idade: {{ age }}</p>
+
+{{#each persons}}
+    {{#with this}}
+        <h1>{{nome}}</h1>
+        <h1>{{idade}}</h1>
+        <hr>
+    {{/with}}
+{{/each}}
